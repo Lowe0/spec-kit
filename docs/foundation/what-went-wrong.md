@@ -19,7 +19,6 @@ Using even the largest models, asking the agent to review the prompts will find 
 ### False Positives
 Eventually, agent reviews will identify nonexistent issues, exacerbating the churn documented above.
 
-## Amendment Bias
-When a blocking issue came up during implementation, agents were inventing contrived solutions to avoid amending already-completed specifications.
-The amendment process was meant to handle revisions to the current spec only, not to past work.
-Changes that seemed like natural follow-ups were being avoided, citing the amendment process.
+## Scope Drift
+When a blocking issue came up during implementation, agents were inventing contrived solutions to preserve the existing specification instead of treating the change as separate work.
+A specification is either completed as written, or the work in progress is discarded and restarted with a new specification. Natural follow-ups must remain separate follow-up work.
