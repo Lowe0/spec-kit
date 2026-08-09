@@ -4,16 +4,28 @@ flowchart LR
     subgraph Specification
         Specify[Specify] --> SpecifyCheck{Any items need clarification?}
         SpecifyCheck -- Yes --> Clarify[Clarify]
-        SpecifyCheck -- No --> Accept
+        SpecifyCheck -- No --> SpecificationAccept
         Clarify --> ClarifyCheck{Any items need clarification?}
         ClarifyCheck -- Yes --> Clarify
-        ClarifyCheck -- No --> Accept
+        ClarifyCheck -- No --> SpecificationAccept
     end
 
-    Accept[Accept] --> Plan
+    SpecificationAccept[Accept] --> Plan
 
     subgraph Planning
         Plan[Plan]
+        Plan --> PlanningAccept[Accept]
     end
 
-    Plan --> End([End])
+    PlanningAccept --> Implement
+
+    subgraph Implementation
+        Implement[Implement] --> TDDLoop
+
+        subgraph TDDLoop [Red-Green-Refactor]
+            Red[Red] --> Green[Green] --> Refactor[Refactor] --> Red
+        end
+    end
+
+    TDDLoop --> ImplementationAccept[Accept]
+    ImplementationAccept --> End([End])
