@@ -31,10 +31,18 @@ It is the `opinion` part of `opinionated framework`.
   - Have each agent reject the other’s input if the process wasn’t followed
   - Make refactor its own agent as well
 
+### Follow-Up, Don't Amend
+- Amendments to the spec or prompt should be a rare escape hatch, not standard practice
+- Always consider whether the spec can be finished as-is and a new spec created, even if some work will be wasted
+- If an amendment is necessary, consider whether it is better to discard work in progress and restart the workflow
+
 ## Inspect and Adapt
 - Prompts should document inconsistencies while they’re being used
 - Documentation should be light - make a note and return to the main flow of the prompt
 - A final prompt should aggregate the issues and produce recommendations after the spec story is done
+- Prefer to continue on and adapt the prompts at the end, rather than trying to fix prompts mid-cycle
+- Not every cycle should find an inconsistency; ideally, most won't
+- Not every inconsistency needs to be automated away; deferring to the human can avoid bloating the prompts
 
 ## Measure, don’t Target
 - “When a measure becomes a target, it ceases to be a useful measure”

@@ -1,0 +1,19 @@
+flowchart LR
+    Start([Start]) --> Specify
+
+    subgraph Specification
+        Specify[Specify] --> SpecifyCheck{Any items need clarification?}
+        SpecifyCheck -- Yes --> Clarify[Clarify]
+        SpecifyCheck -- No --> Accept
+        Clarify --> ClarifyCheck{Any items need clarification?}
+        ClarifyCheck -- Yes --> Clarify
+        ClarifyCheck -- No --> Accept
+    end
+
+    Accept[Accept] --> Plan
+
+    subgraph Planning
+        Plan[Plan]
+    end
+
+    Plan --> End([End])
