@@ -31,7 +31,7 @@ It is the `opinion` part of `opinionated framework`.
   - Have each agent reject the other’s input if the process wasn’t followed
   - Make refactor its own agent as well
 
-### Follow Up or Restart
+## Follow Up or Restart
 - Changes to a spec or prompt are follow-up work, not changes to work in progress
 - Always consider whether the spec can be finished as-is and a new spec created, even if some work will be wasted
 - If the spec cannot be completed as written, discard work in progress and restart the workflow
