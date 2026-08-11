@@ -1,2 +1,0 @@
-- needs its own verb/slash-command to tell the agent to do it
-- should support adding to existing features, not isolated new files per spec

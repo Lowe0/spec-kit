@@ -1,2 +1,3 @@
- move inspect-and-adapt cycle here
- only the “document errors as you go” part needs to remain mandatory
+Move the inspect-and-adapt cycle here
+
+Only the “document errors as you go” part needs to remain mandatory
