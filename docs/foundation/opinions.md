@@ -1,6 +1,13 @@
 This document contains general thoughts on how I'd like the kit to work.
 It is the `opinion` part of `opinionated framework`.
 
+## Spec-Anchored
+- Use a spec to define a feature, not a change
+- The `specify` prompt should create or update an evolving spec
+- A separate artifact is needed for traceability
+  - Part of a per-change plan file?
+  - A per-change delta spec?
+
 ## Use JSON, not Markdown, for contracts:
 - Json is trivial to render as MD; the inverse is not true
 - Once contracts mature, they can be reworked as plain text
