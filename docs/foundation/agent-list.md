@@ -13,7 +13,7 @@ Agents are separated when they have different goals, inputs, outputs, or opportu
 | Red agent | `/implement` | Add a test or other executable check that demonstrates the missing behavior. | A failing test and evidence that it fails for the intended reason. |
 | Green agent | `/implement` | Verify the Red agent’s failure, then implement the smallest change that makes it pass. | Passing tests and evidence that the intended failure is resolved. |
 | Refactor agent | `/implement` | Improve the implementation while preserving the verified behavior. | Passing tests and evidence of the refactoring performed. |
-| Acceptance agent | — | Independently verify that the implementation satisfies the change contract and contains the required evidence. | Accepted or rejected implementation handoff with reasons. |
+| Acceptance agent | Internal prompt invoked by `/change`, `/plan`, or `/implement` | Independently verify that the preceding artifact satisfies its contract and contains the required evidence. For `/implement`, this runs after the Red/Green/Refactor cycle. | Accepted or rejected handoff with reasons. |
 | Sync agent | `/sync` | Reconcile the completed change with the living feature spec and finalize the change record. | Updated living spec and completed traceability artifact. |
 
 ## Supporting agents
