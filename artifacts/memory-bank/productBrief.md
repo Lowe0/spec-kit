@@ -1,3 +1,5 @@
+<!-- Artifact scope: common -->
+
 # Product Brief
 
 Use this template to establish the initial context for a new project. Keep it as a living summary and add fields only when the workflow exposes a gap.

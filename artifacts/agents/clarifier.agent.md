@@ -1,0 +1,1 @@
+<!-- Artifact scope: Copilot-specific -->

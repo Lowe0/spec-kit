@@ -1,3 +1,5 @@
+<!-- Artifact scope: common -->
+
 # System Patterns
 
 Use this template to record the durable patterns that explain how the system is shaped and how its parts should work together. Record relationships, boundaries, invariants, and tradeoffs—not every implementation detail. Keep it living and add a pattern when a change exposes a gap.

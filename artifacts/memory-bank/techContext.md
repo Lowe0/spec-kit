@@ -1,3 +1,5 @@
+<!-- Artifact scope: common -->
+
 # Technical Context
 
 Use this template to record the technical context that agents need to work on the project. Keep it living and add fields only when the workflow exposes a gap.

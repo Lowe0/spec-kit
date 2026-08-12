@@ -1,3 +1,5 @@
+<!-- Artifact scope: common -->
+
 # Product Context
 
 Use this template to record the product context that agents need after the initial brief. Keep it living and add fields only when the workflow exposes a gap.
