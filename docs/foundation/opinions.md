@@ -1,6 +1,11 @@
 This document contains general thoughts on how I'd like the kit to work.
 It is the `opinion` part of `opinionated framework`.
 
+## Copilot-Friendly, Not Copilot-Only
+- Terms like `agent`, `prompt`, and `instructions` are borrowed from GitHub Copilot
+- The kit should avoid architecture that makes it only work with Copilot
+- While no specific non-Copilot hosts are in scope right now, that could change in the future
+
 ## Bring Your Own Memory Bank
 - This kit will provide a basic memory bank, but it is intended to be replaced by the user.
 - Building the ideal memory bank is not a goal of this kit.

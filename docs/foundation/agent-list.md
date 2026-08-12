@@ -4,7 +4,7 @@ Agents are separated when they have different goals, inputs, outputs, or opportu
 
 ## Core workflow agents
 
-| Agent | Verb | Responsibility | Key output |
+| Agent | Operation | Responsibility | Key output |
 | --- | --- | --- | --- |
 | Specifier | `/specify` | Create or update the living feature spec. | Accepted feature spec, with unresolved questions made explicit. |
 | Clarifier | Internal prompt invoked by `/specify` or `/change` | Resolve questions or ambiguities in a feature spec or change definition. | Decisions that can be incorporated into the relevant artifact. |
@@ -18,7 +18,7 @@ Agents are separated when they have different goals, inputs, outputs, or opportu
 
 ## Supporting agents
 
-| Agent | Verb | Responsibility | Key output |
+| Agent | Operation | Responsibility | Key output |
 | --- | --- | --- | --- |
 | Inspect-and-adapt agent | — | Capture inconsistencies during a cycle and aggregate them for bounded review afterward. | Issues, recommendations, and a human decision where needed. |
 | Commit agent | — | Verify the preceding handoff and create the configured commit. | Commit and handoff evidence. |
