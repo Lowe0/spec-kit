@@ -1,0 +1,13 @@
+flowchart LR
+    Start([Start]) --> Capture[Capture problems encountered during the cycle]
+    Capture --> Aggregate@{ shape: collate, label: "Aggregate problems since last I&A cycle" }
+    Aggregate --> Suggest[Suggest solutions]
+    Suggest --> Decision{What should happen?}
+
+    Decision -- Solve in agent --> Solve[Solve in agent]
+    Decision -- Alert the human --> Alert[Alert the human]
+    Decision -- Take no action --> NoAction[Take no action]
+
+    Solve --> End([End])
+    Alert --> End
+    NoAction --> End

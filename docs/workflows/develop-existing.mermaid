@@ -1,0 +1,29 @@
+flowchart LR
+    Start([Start]) --> SelectSpec
+
+    SelectSpec[Select existing living feature spec] --> Change
+
+    subgraph ChangeDefinition[Change Definition]
+        Change[Change: define bounded delta] --> ChangeAccept[Accept change]
+    end
+
+    ChangeAccept --> Plan
+
+    subgraph Planning
+        Plan[Plan] --> PlanningAccept[Accept plan]
+    end
+
+    PlanningAccept --> Implement
+
+    subgraph Implementation
+        Implement[Implement] --> TDDLoop
+
+        subgraph TDDLoop [Red-Green-Refactor]
+            Red[Red] --> Green[Green] --> Refactor[Refactor] --> Red
+        end
+
+        TDDLoop --> ImplementationAccept[Accept implementation]
+    end
+
+    ImplementationAccept --> Sync
+    Sync[Sync: update living spec and finalize evidence] --> End([End])
