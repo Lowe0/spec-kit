@@ -25,14 +25,14 @@ It is the `opinion` part of `opinionated framework`.
 - Document the contract separately, and have both the producing and consuming prompt refer to it
 - Contracts should prioritize agent-to-agent communication
 
-## Only outputs matter - so the things that matter need to be outputs
+## Only outputs matter, so the things that matter need to be outputs
 - If a particular process needs to be followed, then evidence of the process needs to be an output of the prompt
 
 ## Some things need pairs
 - A single agent can take shortcuts to get to an accepted output
 - But an agent is unlikely to take shortcuts on behalf of another agent
-- Separate multi-step processes among agents to break the incentive to skip over steps
-- Example: Test Driven Development
+- Separate multistep processes among agents to break the incentive to skip over steps
+- Example: Test-Driven Development
   - Make one agent red, have it write the failing test
   - Make one agent green, have it verify the failing test and code until it passes
   - Have each agent reject the other’s input if the process wasn’t followed
@@ -56,7 +56,7 @@ It is the `opinion` part of `opinionated framework`.
 ## Measure, don’t Target
 - “When a measure becomes a target, it ceases to be a useful measure”
 - Monitor the length, depth, and complexity of prompts before vs after changes
-- Don’t target specific metrics - consider every change’s value vs cost
+- Don’t target specific metrics; consider every change’s value vs cost
 
 ## Justify Its Existence
 - https://xkcd.com/927/
