@@ -1,6 +1,11 @@
 This document contains general thoughts on how I'd like the kit to work.
 It is the `opinion` part of `opinionated framework`.
 
+## Bring Your Own Memory Bank
+- This kit will provide a basic memory bank, but it is intended to be replaced by the user.
+- Building the ideal memory bank is not a goal of this kit.
+- In future versions, creating a memory bank could itself be spun off as an agent, looking at how other kits are structured and proposing the best mix for the developer.
+
 ## Spec-Anchored
 - Use a spec to define a feature, not a change
 - The `specify` prompt should create or update an evolving spec
