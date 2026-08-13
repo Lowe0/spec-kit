@@ -9,11 +9,13 @@ description: Create or update a living feature specification.
 
 Create or update a living feature specification from the provided project request and context.
 
+Use the input and output contract in `artifacts/contracts/specifier.contract.json`.
+
 ## Input
 
-- Project request
-- Relevant project context, if available
-- Existing feature specification, if one exists
+The input is a freeform project request plus any relevant context or existing
+feature specification. The calling operation determines whether this creates or
+updates the feature spec; this contract does not distinguish those cases.
 
 ## Instructions
 
@@ -24,10 +26,8 @@ Create or update a living feature specification from the provided project reques
 
 ## Output
 
-Return:
-
-1. The proposed living feature specification.
-2. Any unresolved questions that prevent the specification from being considered complete.
-3. Any assumptions made while drafting or updating it.
+Return the contract’s successful output, including the proposed living feature
+specification and its repo-relative `spec.md` path. If the input is insufficient,
+return the contract’s `needs_input` output with the questions needed to continue.
 
 If the input is invalid or insufficient, return the questions needed to continue and do not invent requirements.

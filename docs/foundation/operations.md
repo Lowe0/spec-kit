@@ -1,7 +1,8 @@
 | Operation    | Description |
 |--------------| --- |
-| `/specify`   | Create or update the living feature spec. |
-| `/change`    | Define a bounded change or delta against the living feature spec. |
+| `/specify`   | Convenience router: route a request to `/new-spec` or `/change`, or ask for clarification when the intent is ambiguous. |
+| `/new-spec`  | Create a new living feature specification from a project request. |
+| `/change`    | Define a bounded, traceable change against an existing living feature specification. |
 | `/plan`      | Plan the change. |
 | `/implement` | Execute the change. |
-| `/sync`      | Reconcile the living feature spec and finalize the change evidence. |
+| `/sync`      | Reconcile the completed change with the living feature specification and finalize its evidence. |
