@@ -9,7 +9,8 @@ description: Create or update a living feature specification from a project requ
 
 Perform the `specify` operation.
 
-Use the contract in `artifacts/contracts/specifier.contract.json`.
+Consume `artifacts/contracts/spec.request.json` and produce
+`artifacts/contracts/spec.draft.json`.
 
 The input contains a freeform project request and may include project context or
 an existing feature spec. The calling operation determines whether the request is

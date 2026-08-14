@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Spec request",
+  "description": "A project request and available context submitted for specification.",
+  "$defs": {
+    "repoRelativeSpecPath": {
+      "type": "string",
+      "description": "A repository-relative path ending in spec.md.",
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.?/)(?:[^/]+/)*spec\\.md$"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request"],
+  "properties": {
+    "request": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The user's freeform project request."
+    },
+    "context": {
+      "type": "string",
+      "description": "Relevant project context, if available."
+    },
+    "existing_spec_path": {
+      "$ref": "#/$defs/repoRelativeSpecPath"
+    }
+  }
+}

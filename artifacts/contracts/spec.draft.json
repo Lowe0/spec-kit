@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Specifier contract",
-  "description": "The input and output boundary for the specify operation.",
+  "title": "Spec draft",
+  "description": "A proposed living feature specification produced from a spec request.",
   "$defs": {
     "repoRelativeSpecPath": {
       "type": "string",
@@ -11,32 +11,12 @@
   },
   "oneOf": [
     {
-      "title": "Input",
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["request"],
-      "properties": {
-        "request": {
-          "type": "string",
-          "minLength": 1,
-          "description": "The user's freeform project request."
-        },
-        "context": {
-          "type": "string",
-          "description": "Relevant project context, if available."
-        },
-        "existing_spec_path": {
-          "$ref": "#/$defs/repoRelativeSpecPath"
-        }
-      }
-    },
-    {
-      "title": "Successful output",
+      "title": "Draft produced",
       "type": "object",
       "additionalProperties": false,
       "required": ["status", "spec_path", "specification", "questions", "assumptions"],
       "properties": {
-        "status": {"const": "accepted"},
+        "status": {"const": "draft"},
         "spec_path": {"$ref": "#/$defs/repoRelativeSpecPath"},
         "specification": {"type": "string", "minLength": 1},
         "questions": {"type": "array", "items": {"type": "string"}},
@@ -44,7 +24,7 @@
       }
     },
     {
-      "title": "Input requiring clarification",
+      "title": "Request requires clarification",
       "type": "object",
       "additionalProperties": false,
       "required": ["status", "questions"],

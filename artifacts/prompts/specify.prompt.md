@@ -9,7 +9,8 @@ description: Create or update a living feature specification.
 
 Create or update a living feature specification from the provided project request and context.
 
-Use the input and output contract in `artifacts/contracts/specifier.contract.json`.
+Consume `artifacts/contracts/spec.request.json` and produce
+`artifacts/contracts/spec.draft.json`.
 
 ## Input
 
