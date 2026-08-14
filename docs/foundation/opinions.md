@@ -45,6 +45,7 @@ It is the `opinion` part of `opinionated framework`.
 - Do not say “refer to <specific prompt>” to get contract details
 - Document the contract separately, and have both the producing and consuming prompt refer to it
 - Contracts should prioritize agent-to-agent communication
+- Contracts sit between agents, so naming them after a specific agent is an anti-pattern
 
 ## Only outputs matter, so the things that matter need to be outputs
 - If a particular process needs to be followed, then evidence of the process needs to be an output of the prompt
