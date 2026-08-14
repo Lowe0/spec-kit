@@ -20,5 +20,5 @@ Using even the largest models, asking the agent to review the prompts will find 
 Eventually, agent reviews will identify nonexistent issues, exacerbating the churn documented above.
 
 ## Scope Drift
-When a blocking issue came up during implementation, agents were inventing contrived solutions to preserve the existing specification instead of treating the change as separate work.
-A specification is either completed as written, or the work in progress is discarded and restarted with a new specification. Natural follow-ups must remain separate follow-up work.
+When a blocking issue came up during implementation, agents were inventing contrived solutions to preserve the existing plan instead of treating the change as separate work.
+A plan is either completed as written, or the work in progress is discarded and restarted with a new plan. Natural follow-ups must remain separate follow-up work.
