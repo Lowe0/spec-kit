@@ -5,7 +5,8 @@ It is the `opinion` part of `opinionated framework`.
 - Terms like `agent`, `prompt`, and `instructions` are borrowed from GitHub Copilot
 - The kit should avoid architecture that makes it only work with Copilot
 - Copilot is the current build target, but each artifact should document whether it is common, Copilot-specific, or not yet classified
-- While no specific non-Copilot hosts are in scope right now, that could change in the future
+- While no specific non-Copilot hosts are in scope right now, that will change in the future
+  - Bringing in a second host would help prevent too-close coupling with a single host
   - If that happens, the `artifacts` folder should be split into common and host-specific versions
   - The existing classifications should provide the starting point for that separation
   - Releases of the kit should then combine the common and one-host-specific version, similar to how programs build for multiple operating systems and binary architectures in a single release
