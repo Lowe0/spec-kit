@@ -47,6 +47,11 @@ It is the `opinion` part of `opinionated framework`.
 - Contracts should prioritize agent-to-agent communication
 - Contracts sit between agents, so naming them after a specific agent is an anti-pattern
 
+## Agents commit, humans merge
+- Agents should commit before exitimg
+- If the receiving agent finds the handoff unsatisfactory, then the commit should be reverted in its own commit
+- Agents must not amend or squash commits; they are part of the audit history
+
 ## Only outputs matter, so the things that matter need to be outputs
 - If a particular process needs to be followed, then evidence of the process needs to be an output of the prompt
 
@@ -78,7 +83,7 @@ It is the `opinion` part of `opinionated framework`.
 ## Measure, don’t Target
 - “When a measure becomes a target, it ceases to be a useful measure”
 - Monitor the length, depth, and complexity of prompts before vs after changes
-- Don’t target specific metrics; consider every change’s value vs cost
+- Don’t target specific metrics; consider every change to the memory bank for value vs cost
 
 ## Justify Its Existence
 - https://xkcd.com/927/
