@@ -66,6 +66,11 @@ It is the `opinion` part of `opinionated framework`.
   - Have each agent reject the other’s input if the process wasn’t followed
   - Make refactor its own agent as well
 
+### Minimize Agent Nesting
+- Agents should be limited to a top level orchestrator and a single sub-agent at a time
+- Sub-agents should not call sub-agents of their own; they should return to the orchestrator for handoff
+- This is to maximize compatibility with hosts that may not support sub-agents-of-sub-agents
+
 ## Follow Up or Restart
 - Prefer to finish a change as planned, rather than altering the plan mid-change
 - If the change can be implemented as planned, then finish and follow up with a new plan
