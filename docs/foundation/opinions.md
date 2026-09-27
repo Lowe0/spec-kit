@@ -4,6 +4,7 @@ It is the `opinion` part of `opinionated framework`.
 ## Copilot-Friendly, Not Copilot-Only
 - Terms like `agent`, `prompt`, and `instructions` are borrowed from GitHub Copilot
 - The kit should avoid architecture that makes it only work with Copilot
+  -Where unavoidable (example: hooks and hook payloads), cleanly separate Copilot-specific concerns
 - Copilot is the current build target, but each artifact should document whether it is common, Copilot-specific, or not yet classified
 - While no specific non-Copilot hosts are in scope right now, that will change in the future
   - Bringing in a second host would help prevent too-close coupling with a single host
@@ -48,8 +49,16 @@ It is the `opinion` part of `opinionated framework`.
 - Contracts should prioritize agent-to-agent communication
 - Contracts sit between agents, so naming them after a specific agent is an anti-pattern
 
+## Enforce in code, not prose
+- When prose files grow too large, agents can start to forget rules
+- Moving rules to code prevents rule breaches
+- Moving rules to code keeps prose smaller
+- Enforcement code should remain portable rather than tied to a single platform
+- Enforcement code should have unit tests
+- Anticipate evasion; agents should not be able to escape enforcement by using shell commands instead of tools
+
 ## Agents commit, humans merge
-- Agents should commit before exitimg
+- Agents must commit before exiting
 - If the receiving agent finds the handoff unsatisfactory, then the commit should be reverted in its own commit
 - Agents must not amend or squash commits; they are part of the audit history
 
