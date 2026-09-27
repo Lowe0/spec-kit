@@ -44,8 +44,8 @@ It is the `opinion` part of `opinionated framework`.
 
 ## Use contracts, don’t defer to prompts:
 - A prompt should contain everything needed to fulfill its responsibilities
-- Do not say “refer to <specific prompt>” to get contract details
-- Document the contract separately, and have both the producing and consuming prompt refer to it
+  - Do not refer to another prompt to get contract details
+  - Document the contract separately, and have both the producing and consuming prompt refer to it
 - Contracts should prioritize agent-to-agent communication
 - Contracts sit between agents, so naming them after a specific agent is an anti-pattern
 
